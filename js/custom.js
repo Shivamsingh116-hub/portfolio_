@@ -1279,3 +1279,16 @@ jQuery(window).on('resize',function () {
 	Industry.resize();
 });
 /*  Window Resize END */
+
+
+
+jQuery(window).on('scroll', function () {
+  var btn = jQuery('.attendance-btn');
+
+  if (jQuery(this).scrollTop() > 850) {
+    btn.css('right', '76px').stop().fadeIn();
+  } else {
+  btn.css('right', '10px').stop().fadeIn();  // smooth hide
+  }
+});
+

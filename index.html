@@ -60,6 +60,12 @@
       rel="stylesheet"
       href="plugins/revolution/revolution/css/revolution.min.css"
     />
+    <style>
+      section,
+      div[id] {
+        scroll-margin-top: 10px; /* adjust based on header height */
+      }
+    </style>
   </head>
   <body id="bg" class="event-body">
     <div class="page-wraper">
@@ -106,20 +112,20 @@
                 </div>
                 <ul class="nav navbar-nav">
                   <li class="active has-mega-menu homedemo">
-                    <a href="index.html">Home</a>
+                    <a href="#home">Home</a>
                   </li>
                   <li class="has-mega-menu">
-                    <a href="javascript:;">Tech Arsenal</a>
+                    <a href="#skills">Tech Arsenal</a>
                   </li>
                   <li class="has-mega-menu">
-                    <a href="javascript:;">Projects</a>
+                    <a href="#projects">Projects</a>
                   </li>
                   <li class="has-mega-menu">
-                    <a href="javascript:;">Experience</a>
+                    <a href="#experience">Experience</a>
                   </li>
 
                   <li>
-                    <a href="javascript:;">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                   </li>
                 </ul>
                 <a
@@ -140,6 +146,7 @@
       <div class="page-content">
         <!-- Slider -->
         <div
+          id="home"
           class="event-banner"
           style="background-image: url(images/main-slider/event/slide1.png)"
         >
@@ -183,7 +190,7 @@
         </div>
 
         <!-- About US -->
-        <section class="content-inner pt-0">
+        <section id="about" class="content-inner pt-0">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
@@ -209,7 +216,7 @@
         </section>
         <!-- Counter -->
         <section
-          class="content-inner-4 ev-aboutus"
+          class="content-inner-4 ev-aboutus pb-5"
           style="
             background-image: url(images/background/event/bg1.png);
             background-position: center;
@@ -271,237 +278,308 @@
             </div>
           </div>
         </section>
-       <div
-  class="section-full content-inner-2 wow fadeIn pt-5 pb-0"
-  data-wow-duration="2s"
-  data-wow-delay="0.3s"
->
-  <div class="container">
-
-    <!-- Heading -->
-    <div class="section-head text-white text-center">
-      <h2 class="title">Experience</h2>
-      <p>
-        My professional and training experience in full stack development and real-world web application building.
-      </p>
-    </div>
-
-    <!-- Carousel -->
-    <div
-      class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none"
-    >
-
-      <!-- Experience 1 -->
-      <div class="item">
-        <div class="testimonial-11 testimonial-box">
-          <div class="testimonial-pic">
-            <img src="images/our-team/pic3.jpg" alt="Ainosof Technology" />
-          </div>
-          <div class="testimonial-detail quote-left quote-right">
-            <div class="testimonial-text">
+        <div
+          id="experience"
+          class="section-full content-inner-2 wow fadeIn pt-6 pb-0"
+          data-wow-duration="2s"
+          data-wow-delay="0.3s"
+        >
+          <div class="container">
+            <!-- Heading -->
+            <div class="section-head text-white text-center">
+              <h2 class="title">Experience</h2>
               <p>
-                Working as a Full Stack Developer for the past 4 months,
-                gaining hands-on experience in building and maintaining real-world web applications.
-                Focused on MERN stack and PHP-based development.
+                My professional and training experience in full stack
+                development and real-world web application building.
               </p>
             </div>
-            <h5 class="testimonial-name text-primary m-t0 m-b5">
-              Ainosof Technology
-            </h5>
-            <span class="testimonial-position">Full Stack Developer</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Experience 2 -->
-      <div class="item">
-        <div class="testimonial-11 testimonial-box">
-          <div class="testimonial-pic">
-            <img src="images/our-team/pic2.jpg" alt="Edunet Foundation" />
-          </div>
-          <div class="testimonial-detail quote-left quote-right">
-            <div class="testimonial-text">
-              <p>
-                Completed MERN Stack Application Development training under TechSaksham
-                (Microsoft × SAP CSR Initiative), implemented by Edunet Foundation.
-                Gained practical experience in full stack development.
-              </p>
+            <!-- Carousel -->
+            <div
+              class="testimonial-box-carousel owl-carousel m-b5 owl-btn-center-lr owl-btn-2 radius-no owl-btn-md owl-theme primary owl-dots-none"
+            >
+              <!-- Experience 1 -->
+              <div class="item">
+                <div class="testimonial-11 testimonial-box">
+                  <div class="testimonial-pic">
+                    <img
+                      src="images/our-team/pic3.jpg"
+                      alt="Ainosof Technology"
+                    />
+                  </div>
+                  <div class="testimonial-detail quote-left quote-right">
+                    <div class="testimonial-text">
+                      <p>
+                        Working as a Full Stack Developer for the past 4 months,
+                        gaining hands-on experience in building and maintaining
+                        real-world web applications. Focused on MERN stack and
+                        PHP-based development.
+                      </p>
+                    </div>
+                    <h5 class="testimonial-name text-primary m-t0 m-b5">
+                      Ainosof Technology
+                    </h5>
+                    <span class="testimonial-position"
+                      >Full Stack Developer</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience 2 -->
+              <div class="item">
+                <div class="testimonial-11 testimonial-box">
+                  <div class="testimonial-pic">
+                    <img
+                      src="images/our-team/pic2.jpg"
+                      alt="Edunet Foundation"
+                    />
+                  </div>
+                  <div class="testimonial-detail quote-left quote-right">
+                    <div class="testimonial-text">
+                      <p>
+                        Completed MERN Stack Application Development training
+                        under TechSaksham (Microsoft × SAP CSR Initiative),
+                        implemented by Edunet Foundation. Gained practical
+                        experience in full stack development.
+                      </p>
+                    </div>
+                    <h5 class="testimonial-name text-primary m-t0 m-b5">
+                      Edunet Foundation
+                    </h5>
+                    <span class="testimonial-position">MERN Stack Trainee</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h5 class="testimonial-name text-primary m-t0 m-b5">
-              Edunet Foundation
-            </h5>
-            <span class="testimonial-position">MERN Stack Trainee</span>
           </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</div>
         <!-- How It Work -->
         <section
-  class="content-inner-4 ev-join"
-  style="background-image: url(images/background/event/bg2.png)"
->
-  <div class="container">
-    <div class="row align-items-center ev-join-inner">
-      
-      <!-- Left Content -->
-      <div class="col-lg-5 m-b30">
-        <div class="section-head text-black style-1">
-          <h3 class="title mb-4">My Projects</h3>
-          <p>
-            A collection of real-world applications that demonstrate my expertise in 
-            <strong>Full Stack Development</strong>, <strong>API Integration</strong>, and 
-            <strong>Scalable Web Solutions</strong>. Each project reflects my ability to 
-            solve complex problems, optimize performance, and deliver user-friendly experiences.
-          </p>
+          id="projects"
+          class="content-inner-4 ev-join"
+          style="background-image: url(images/background/event/bg2.png)"
+        >
+          <div class="container">
+            <div class="row align-items-center ev-join-inner">
+              <!-- Left Content -->
+              <div class="col-lg-5 m-b30">
+                <div class="section-head text-black style-1">
+                  <h3 class="title mb-4">My Projects</h3>
+                  <p>
+                    A collection of real-world applications that demonstrate my
+                    expertise in
+                    <strong>Full Stack Development</strong>,
+                    <strong>API Integration</strong>, and
+                    <strong>Scalable Web Solutions</strong>. Each project
+                    reflects my ability to solve complex problems, optimize
+                    performance, and deliver user-friendly experiences.
+                  </p>
 
-          <!-- Key Highlights -->
-          <ul class="list-check mt-3">
-            <li> Built with modern technologies like <strong>React, Node.js, MongoDB</strong></li>
-            <li> Focus on <strong>performance, security, and scalability</strong></li>
-            <li> Real-world business solutions and live applications</li>
-            <li> Clean UI/UX with responsive design</li>
-          </ul>
-        </div>
+                  <!-- Key Highlights -->
+                  <ul class="list-check mt-3">
+                    <li>
+                      Built with modern technologies like
+                      <strong>React, Node.js, MongoDB</strong>
+                    </li>
+                    <li>
+                      Focus on
+                      <strong>performance, security, and scalability</strong>
+                    </li>
+                    <li>Real-world business solutions and live applications</li>
+                    <li>Clean UI/UX with responsive design</li>
+                  </ul>
+                </div>
 
-        <a href="#" class="site-button-secondry btnhover20 radius-xl">
-          View All Projects
-        </a>
-      </div>
-
-      <!-- Right Project Cards -->
-      <div class="col-lg-7">
-        <div class="row">
-
-          <!-- Project 1 -->
-          <div class="col-md-6">
-            <div class="icon-bx-wraper style-19 m-b30">
-              <div class="icon-bx-md m-b20">
-                <span class="icon-cell">
-                  <img src="images/project/project1.png" alt="Project 1" />
-                </span>
+                <a href="#" class="site-button-secondry btnhover20 radius-xl">
+                  View All Projects
+                </a>
               </div>
 
-              <h3 class="title">
-                <a href="#">Construction Accounting Software</a>
-              </h3>
+              <!-- Right Project Cards -->
+              <div class="col-lg-7">
+                <div class="row">
+                  <!-- Project 1 -->
+                  <div class="col-md-6">
+                    <div class="icon-bx-wraper style-19 m-b30">
+                      <div class="icon-bx-md m-b20">
+                        <span class="icon-cell">
+                          <img
+                            src="images/project/project1.png"
+                            alt="Project 1"
+                          />
+                        </span>
+                      </div>
 
-              <div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
+                      <h3 class="title">
+                        <a href="#">Construction Accounting Software</a>
+                      </h3>
 
-              <p>
-                A robust accounting system designed for construction businesses 
-                to manage <strong>expenses, billing, reports, and financial tracking</strong>.
-              </p>
+                      <div
+                        class="dz-separator style-3 text-primary mt-0 mb-4"
+                      ></div>
 
-              <p class="mb-2">
-                <strong>Tech Stack:</strong> PHP, MySQL, JavaScript
-              </p>
+                      <p>
+                        A robust accounting system designed for construction
+                        businesses to manage
+                        <strong
+                          >expenses, billing, reports, and financial
+                          tracking</strong
+                        >.
+                      </p>
 
-              <a href="#" target="_blank" class="text-primary mt-2 fw-semibold">
-                Explore More <i class="fas fa-angle-double-right ms-2"></i>
-              </a>
-            </div>
+                      <p class="mb-2">
+                        <strong>Tech Stack:</strong> PHP, MySQL, JavaScript
+                      </p>
 
-            <!-- Project 2 -->
-            <div class="icon-bx-wraper style-19 m-b30">
-              <div class="icon-bx-md m-b20">
-                <span class="icon-cell">
-                  <img src="images/project/project2.png" alt="Project 2" />
-                </span>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-primary mt-2 fw-semibold"
+                      >
+                        Explore More
+                        <i class="fas fa-angle-double-right ms-2"></i>
+                      </a>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="icon-bx-wraper style-19 m-b30">
+                      <div class="icon-bx-md m-b20">
+                        <span class="icon-cell">
+                          <img
+                            src="images/project/project2.png"
+                            alt="Project 2"
+                          />
+                        </span>
+                      </div>
+
+                      <h3 class="title">
+                        <a href="#">Society Taxi Management</a>
+                      </h3>
+
+                      <div
+                        class="dz-separator style-3 text-primary mt-0 mb-4"
+                      ></div>
+
+                      <p>
+                        A smart booking system to manage
+                        <strong
+                          >taxi scheduling, user requests, and driver
+                          allocation</strong
+                        >
+                        efficiently.
+                      </p>
+
+                      <p class="mb-2">
+                        <strong>Features:</strong> Booking System, Admin Panel,
+                        Notifications
+                      </p>
+
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-primary mt-2 fw-semibold"
+                      >
+                        Explore More
+                        <i class="fas fa-angle-double-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Right Column -->
+                  <div class="col-md-6">
+                    <!-- Project 3 -->
+                    <div class="icon-bx-wraper style-19 m-b30 mt-md-5 mt-0">
+                      <div class="icon-bx-md m-b20">
+                        <span class="icon-cell">
+                          <img
+                            src="images/project/project3.png"
+                            alt="Project 3"
+                          />
+                        </span>
+                      </div>
+
+                      <h3 class="title">
+                        <a href="#">Company Portfolio Website</a>
+                      </h3>
+
+                      <div
+                        class="dz-separator style-3 text-primary mt-0 mb-4"
+                      ></div>
+
+                      <p>
+                        A modern corporate website with
+                        <strong
+                          >responsive design, SEO optimization, and
+                          high-performance UI</strong
+                        >.
+                      </p>
+
+                      <p class="mb-2">
+                        <strong>Focus:</strong> UI/UX, Speed Optimization,
+                        Branding
+                      </p>
+
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-primary mt-2 fw-semibold"
+                      >
+                        Explore More
+                        <i class="fas fa-angle-double-right ms-2"></i>
+                      </a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="icon-bx-wraper style-19 m-b30">
+                      <div class="icon-bx-md m-b20">
+                        <span class="icon-cell">
+                          <img
+                            src="images/project/project4.png"
+                            alt="Project 4"
+                          />
+                        </span>
+                      </div>
+
+                      <h3 class="title">
+                        <a href="#">Gramhub (Social Application)</a>
+                      </h3>
+
+                      <div
+                        class="dz-separator style-3 text-primary mt-0 mb-4"
+                      ></div>
+
+                      <p>
+                        A social platform enabling
+                        <strong
+                          >user interaction, content sharing, and real-time
+                          communication</strong
+                        >.
+                      </p>
+
+                      <p class="mb-2">
+                        <strong>Tech Stack:</strong> MERN Stack, REST APIs
+                      </p>
+
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-primary mt-2 fw-semibold"
+                      >
+                        Explore More
+                        <i class="fas fa-angle-double-right ms-2"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <h3 class="title">
-                <a href="#">Society Taxi Management</a>
-              </h3>
-
-              <div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-
-              <p>
-                A smart booking system to manage <strong>taxi scheduling, user requests, 
-                and driver allocation</strong> efficiently.
-              </p>
-
-              <p class="mb-2">
-                <strong>Features:</strong> Booking System, Admin Panel, Notifications
-              </p>
-
-              <a href="#" target="_blank" class="text-primary mt-2 fw-semibold">
-                Explore More <i class="fas fa-angle-double-right ms-2"></i>
-              </a>
             </div>
           </div>
-
-          <!-- Right Column -->
-          <div class="col-md-6">
-
-            <!-- Project 3 -->
-            <div class="icon-bx-wraper style-19 m-b30 mt-md-5 mt-0">
-              <div class="icon-bx-md m-b20">
-                <span class="icon-cell">
-                  <img src="images/project/project3.png" alt="Project 3" />
-                </span>
-              </div>
-
-              <h3 class="title">
-                <a href="#">Company Portfolio Website</a>
-              </h3>
-
-              <div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-
-              <p>
-                A modern corporate website with <strong>responsive design, SEO optimization, 
-                and high-performance UI</strong>.
-              </p>
-
-              <p class="mb-2">
-                <strong>Focus:</strong> UI/UX, Speed Optimization, Branding
-              </p>
-
-              <a href="#" target="_blank" class="text-primary mt-2 fw-semibold">
-                Explore More <i class="fas fa-angle-double-right ms-2"></i>
-              </a>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="icon-bx-wraper style-19 m-b30">
-              <div class="icon-bx-md m-b20">
-                <span class="icon-cell">
-                  <img src="images/project/project4.png" alt="Project 4" />
-                </span>
-              </div>
-
-              <h3 class="title">
-                <a href="#">Gramhub (Social Application)</a>
-              </h3>
-
-              <div class="dz-separator style-3 text-primary mt-0 mb-4"></div>
-
-              <p>
-                A social platform enabling <strong>user interaction, content sharing, 
-                and real-time communication</strong>.
-              </p>
-
-              <p class="mb-2">
-                <strong>Tech Stack:</strong> MERN Stack, REST APIs
-              </p>
-
-              <a href="#" target="_blank" class="text-primary mt-2 fw-semibold">
-                Explore More <i class="fas fa-angle-double-right ms-2"></i>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+        </section>
 
         <!-- Testimonials -->
         <section
+          id="skills"
           class="content-inner-4 ev-aboutus"
           style="
             background-image: url(images/background/event/bg1.png);
@@ -511,10 +589,13 @@
           <div class="container">
             <!-- Heading -->
             <div
+              style="margin-bottom: 12px"
               class="section-head style-2 d-flex flex-wrap text-white justify-content-between align-items-center"
             >
               <h2 class="title me-3">My Skills</h2>
-              <a href="#"  style="color: var(--color-secondry);">Explore More <i class="fas fa-angle-double-right ms-2"></i></a>
+              <a href="#" style="color: var(--color-secondry)"
+                >Explore More <i class="fas fa-angle-double-right ms-2"></i
+              ></a>
             </div>
 
             <div class="row sp40">
@@ -580,10 +661,142 @@
             </div>
           </div>
         </section>
+
+        <!-- Contact -->
+        <div
+          id="contact"
+          style="padding-top: 90px"
+          class="section-full contact-page-9"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 m-auto">
+                <form
+                id="contact-form"
+                  class="inquiry-form wow box-shadow bg-white fadeInUp"
+                  data-wow-delay="0.2s"
+                >
+                  <!-- Heading -->
+                  <h3 class="title-box font-weight-300 m-t0 m-b10">
+                    Let's Work Together
+                    <span class="bg-primary"></span>
+                  </h3>
+
+                  <p>
+                    Have a project idea or opportunity? Feel free to reach out.
+                    I'm open to collaborations, freelance work, and full-time
+                    roles.
+                  </p>
+
+                  <div class="row">
+                    <!-- Name -->
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="ti-user text-primary"></i>
+                          </span>
+                          <input
+                            name="name"
+                            type="text"
+                            required
+                            class="form-control"
+                            placeholder="Your Name"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="ti-email text-primary"></i>
+                          </span>
+                          <input
+                            name="email"
+                            type="email"
+                            required
+                            class="form-control"
+                            placeholder="Your Email"
+                          />
+                        </div>
+                      </div>
+                    </div>
+<!-- Phone Number -->
+<div class="col-lg-6 col-md-6">
+  <div class="form-group">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <i class="ti-mobile text-primary"></i>
+      </span>
+      <input
+        name="phone"
+        type="tel"
+        class="form-control"
+        placeholder="Your Phone Number"
+        pattern="[0-9]{10}"
+        title="Enter a valid 10-digit phone number"
+        required
+      />
+    </div>
+  </div>
+</div>
+                    <!-- Subject -->
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="ti-pencil text-primary"></i>
+                          </span>
+                          <input
+                            name="subject"
+                            type="text"
+                            class="form-control"
+                            placeholder="Subject (Project / Job Opportunity)"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="ti-agenda text-primary"></i>
+                          </span>
+                          <textarea
+                            name="message"
+                            rows="4"
+                            class="form-control"
+                            required
+                            placeholder="Tell me about your project or opportunity"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="col-lg-12 text-center">
+                      <button
+                        type="submit"
+                        class="site-button button-md radius-xl"
+                      >
+                        <span>Send Message</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Content END -->
       <!-- Footer -->
-      <footer class="site-footer event-footer">
+      <footer id="footer" class="site-footer event-footer">
         <div class="footer-top pb-0 bg-primary">
           <div class="container">
             <div class="ev-subscribe">
@@ -668,10 +881,15 @@
         </div>
       </footer>
       <!-- Footer END -->
+       <!-- Attendance Button -->
+<a href="#footer"  class="attendance-btn btnhover20 site-button-secondry" >
+  Mark Presence
+</a>
       <button class="scroltop style1 white icon-up" type="button">
-        <i class="fas fa-angle-double-right ms-2"></i>
+        <i class="fas fa-angle-up"></i>
       </button>
     </div>
+    <script src="config.js"></script>
     <!-- JAVASCRIPT FILES ========================================= -->
     <script src="js/jquery.min.js"></script>
     <!-- JQUERY.MIN JS -->
@@ -712,7 +930,7 @@
     <!-- CONTACT JS  -->
     <script src="plugins/rangeslider/rangeslider.js"></script>
     <!-- Rangeslider -->
-    <script src="plugins/switcher/switcher.js"></script>
+    
     <!-- Switcher -->
     <script src="js/jquery.lazy.min.js"></script>
     <!-- REVOLUTION JS FILES -->
@@ -743,5 +961,29 @@
       data-cf-beacon='{"version":"2024.11.0","token":"0931814f84b94398b852d3ac91b5f293","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        let sections = document.querySelectorAll("section, div[id]");
+        let navLinks = document.querySelectorAll(".nav a");
+
+        sections.forEach((section) => {
+          let top = window.scrollY;
+          let offset = section.offsetTop - 150;
+          let height = section.offsetHeight;
+          let id = section.getAttribute("id");
+
+          if (top >= offset && top < offset + height) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              document
+                .querySelector('.nav a[href="#' + id + '"]')
+                .classList.add("active");
+            });
+          }
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/mail-send.js"></script>
   </body>
 </html>
